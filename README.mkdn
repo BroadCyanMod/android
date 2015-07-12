@@ -1,0 +1,23 @@
+Android for bcm21553 devices - CyanogenMod 10.1 [BroadCyanMod]
+===========
+
+Getting Started
+---------------
+
+To initialize your local repository using the BroadCyanMod trees, use a command like this:
+
+    repo init -u git://github.com/BroadCyanMod/android.git -b cm-10.1
+
+Then to sync up:
+
+    repo sync
+
+Build your device:
+
+    source build/envsetup.sh
+    brunch DEVICENAME (for ex: brunch cooperve)
+
+Flash ZIP:
+
+    out/target/product/DEVICENAME/cm-VERSION-DEVICENAME.zip
+
