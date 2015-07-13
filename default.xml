@@ -8,6 +8,11 @@
   <remote  name="github"
            fetch=".."
            review="review.androidarmv6.org" />
+           
+  
+  <remote  name="caf"
+           fetch="git://codeaurora.org/"
+           review="codeaurora.org" />
 
   <remote  name="bcm"
            fetch="https://github.com/BroadCyanMod" />
