@@ -10,7 +10,7 @@ To initialize your local repository using the BroadCyanMod trees, use a command 
 
 Then to sync up:
 
-    repo sync
+    repo sync -j5
 
 Build your device:
 
@@ -21,3 +21,9 @@ Flash ZIP:
 
     out/target/product/DEVICENAME/cm-VERSION-DEVICENAME.zip
 
+How to add local_manifest to download repo:
+
+    cd .repo/manifests/local_manifest
+    cp local_manifest.xml ../../
+    cd ../../../
+    repo sync -j5 
