@@ -32,7 +32,7 @@
   <project path="android" name="android" remote="bcm" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" />
-  <project path="bionic" name="CyanogenMod/android_bionic" />
+  <project path="bionic" name="android_bionic" remote="bcm" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
@@ -369,13 +369,7 @@
   <project path="prebuilts/sdk" name="android_prebuilts_sdk" remote="bcm" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
-  <project path="system/bluetooth" name="androidarmv6/android_system_bluetooth" />
-  <project path="system/core" name="androidarmv6/android_system_core" />
-  <project path="system/extras" name="CyanogenMod/android_system_extras" />
-  <project path="system/media" name="CyanogenMod/android_system_media" />
-  <project path="system/netd" name="androidarmv6/android_system_netd" />
-  <project path="system/security" name="CyanogenMod/android_system_security" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" />
+  <project path="system" name="android_system" remote="bcm" />
   <project path="tools/build" name="platform/tools/build" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="tools/motodev" name="platform/tools/motodev" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="vendor/cm" name="androidarmv6/android_vendor_cm" />
