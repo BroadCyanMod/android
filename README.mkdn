@@ -27,3 +27,7 @@ How to add local_manifest to download repo:
     cp local_manifest.xml ../../
     cd ../../../
     repo sync -j5 
+
+how to build cm-10.1 for cooperve:
+
+    ./build-cm.sh -c1 coopeve
