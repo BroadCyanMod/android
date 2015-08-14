@@ -1,3 +1,6 @@
+English
+==========
+
 Android for bcm21553 devices - CyanogenMod 10.1 [BroadCyanMod]
 ===========
 
@@ -11,16 +14,7 @@ To initialize your local repository using the BroadCyanMod trees, use a command 
 Then to sync up:
 
     repo sync -j5
-
-Build your device:
-
-    source build/envsetup.sh
-    brunch DEVICENAME (for ex: brunch cooperve)
-
-Flash ZIP:
-
-    out/target/product/DEVICENAME/cm-VERSION-DEVICENAME.zip
-
+    
 How to add local_manifest to download repo:
 
     cd .repo/manifests/local_manifest
@@ -28,6 +22,56 @@ How to add local_manifest to download repo:
     cd ../../../
     repo sync -j5 
 
-how to build cm-10.1 for cooperve:
+How to build to Cooperve (2 methods):
 
-    ./build-cm.sh -c1 coopeve
+Normal Method:
+
+    source build/envsetup.sh
+    brunch cooperve
+    
+New CM Vendor Method:
+
+    ./build-cm.sh -c1 cooperve
+
+Flash ZIP:
+
+    out/target/product/DEVICENAME/cm-VERSION-DEVICENAME.zip
+
+Español
+=========
+
+Android para Dispositivos BCM21553 - CyanogenMod 10.1 [BroadCyanMod]
+=========
+
+Empezando
+------------
+
+Para iniciar tu repositorio local usando el arbol de BroadCyanMod, una un comando como este:
+
+    repo init -u git://github.com/BroadCyanMod/android.git -b cm-10.1
+    
+Para sincronizar:
+
+    repo sync -j6 -f
+    
+Como añadir el Local_manifest a tu repo de descarga:
+
+    cd .repo/manifests/local_manifest
+    cp local_manifest.xml ../../
+    cd ../../../
+    repo sync -j5
+    
+Como construir para Cooperve (2 metodos):
+
+Metodo normal: 
+
+    source build/envsetup.sh
+    brunch cooperve
+
+Nuevo metodo vendor CM:
+
+    ./build-cm.sh -c1 cooperve
+    
+Flashea la ROM
+
+    out/target/product/DEVICENAME/cm-VERSION-DEVICENAME.zip
