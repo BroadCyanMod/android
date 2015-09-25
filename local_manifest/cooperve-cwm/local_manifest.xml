@@ -11,6 +11,9 @@
 <project path="kernel/samsung/bcm21553-common" name="android_kernel_samsung_bcm21553-common" remote="bcm" />
 <project path="vendor/samsung" name="android_vendor_samsung" remote="bcm" />
 
+<!-- Recovery -->
+<project path="bootable/recovery" name="android_bootable_recovery" remote="bcm" />
+
 <!-- Add More Repos of devices here -->
 
 </manifest>
