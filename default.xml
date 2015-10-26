@@ -11,6 +11,7 @@
   
   <remote  name="bcm"
            fetch="git://github.com/BroadCyanMod"
+           revision="refs/heads/cm-10.2" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
