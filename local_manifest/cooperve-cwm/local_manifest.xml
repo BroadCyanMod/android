@@ -1,11 +1,11 @@
 <manifest>
 
 <!-- cooperve Repositories -->
-<project path="device/samsung/cooperve" name="device_samsung_cooperve" remote="pacme" />
-<project path="device/samsung/bcm21553-common" name="device_samsung_bcm21553-common" remote="pacme" />
-<project path="hardware/broadcom" name="hardware_broadcom-common" remote="pacme" />
-<project path="kernel/samsung/bcm21553-common" name="kernel_samsung_bcm21553-common" remote="pacme" revision="refs/heads/cm-10.2-update" />
-<project path="vendor/samsung" name="vendor_samsung" remote="pacme" />
+<project path="device/samsung/cooperve" name="device_samsung_cooperve" remote="bcm" />
+<project path="device/samsung/bcm21553-common" name="device_samsung_bcm21553-common" remote="bcm" />
+<project path="hardware/broadcom" name="hardware_broadcom-common" remote="bcm" />
+<project path="kernel/samsung/bcm21553-common" name="kernel_samsung_bcm21553-common" remote="bcm" revision="refs/heads/cm-10.2-update" />
+<project path="vendor/samsung" name="vendor_samsung" remote="bcm" />
 
 <!-- Add More Repos of devices here -->
 
